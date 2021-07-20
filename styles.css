@@ -82,6 +82,60 @@ h1{
 
 /* ---------------FIN SECTION ACCUEIL------------------- */
 
+#services{
+    position: relative;
+}
+#category{
+    margin: 100px 0 0 4%;
+}
+.categ_serv{
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 30px;
+}
+.categ_serv:active{
+    color: #D2A814;
+}
+.serv{
+    color: #2D1E0A;
+    background-color: transparent !important;
+}
+.soucateg{
+    margin: 15px 0 0 50px;
+    font-size: 30px;
+}
+.serv:hover{
+    color: #A58827;
+    background-color: transparent !important;
+}
+.dec_mob{
+    width: 60%;
+    position: absolute;
+    right: 0;
+}
+article{
+    position: absolute;
+    width: 80%;
+    height: 70%;
+    right: 0;
+    top: 49.4%;
+    transform: translateY(-50%);
+    border: red solid 1px;
+}
+figcaption{
+    position: absolute;
+    font-size: 35px;
+    border: red solid 1px;
+    left: 4.8%;
+    top: 90%;
+    transform: translateY(-50%);
+}
+
+/* -----------------SECTION SERVICES-------------------- */
+
+
+/* ---------------FIN SECTION SERVICES------------------ */
+
 /* -----------------SECTION CONTACT--------------------- */
 
 #contact{
@@ -153,6 +207,7 @@ button:focus{
     background-color: #19120A;
     color: #A58827;
 }
+/* ------------------FIN SECTION CONTACT--------------------- */
 
 /* ---------------------Propriétés COMMUNES------------------ */
 .overflow{
