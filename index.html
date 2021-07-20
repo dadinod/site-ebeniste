@@ -23,28 +23,28 @@
                 Fûté</h1>
             <figure class="logo_acc"><img src="images/Big_B.svg" alt="logo"></figure>
         </section>
-         <section>
+         <section id="contact">
              <h2>Contact</h2>
 
              <form id="inscription" action="" onsubmit="Submit()" method="">
                 <div id="ident">
                     <div class="width45_100">
                         <label for="name">Nom ou raison social</label>
-                        <input type="text" id="name" name="name" onkeyup="identity()" maxlength="25" required>
+                        <input type="text" id="name" name="name"   required>
                     </div>
                     <div class="width45_100">
                         <label for="firstname">Prénom</label>
-                        <input type="text" id="firstname" name="firstname" onkeyup="identity()" maxlength="25" required>
+                        <input type="text" id="firstname" name="firstname" >
                     </div>
                 </div>
                 
                 <div class="top10px">
                     <label for="email">Mail</label>
-                    <input id="email" type="email" name="email" onkeyup="validateEmail()" required>
+                    <input id="email" type="email" name="email"  required>
                 </div>
                 <div class="">
-                    <label for="objet">Mot de passe</label>
-                    <input id="objet" type="text"  name="objet" onkeyup="isGood(this.value)" autocomplete="off" required>
+                    <label for="objet">Objet</label>
+                    <input id="objet" type="text"  name="objet"  required>
                     <small class="help-block" id="password-text"></small>
                 </div>
                 <div class="top10px">
@@ -54,10 +54,10 @@
                 </div>
                 
                     
-                    <div class="check  overflow">
-                        <input id="robot" type="checkbox" name="robot" class="chekbox"  required>
-                        <label for="robot" class="">Je ne suis pas un robot</label>
-                    </div>
+                <div id="check"  class="overflow">
+                    <input id="robot" type="checkbox" name="robot" class="chekbox"  required>
+                    <label for="robot" class="">Je ne suis pas un robot</label>
+                </div>
                    
                 <div class="flex top10px">
                     <button id="reset" type="reset" class="" onclick="Submit()">Effacer</button>
