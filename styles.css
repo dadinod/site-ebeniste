@@ -53,7 +53,9 @@ header li:hover{
 /* ------------------FIN HEADER------------------------- */
 
 /* -------------------CONTAINER------------------------- */
-
+#container{
+    position: relative;
+}
 /* -----------------SECTION ACCUEIL--------------------- */
 section{
     width: 100%;
@@ -84,6 +86,7 @@ h1{
 
 #services{
     position: relative;
+    border: red solid 1px;
 }
 #category{
     margin: 100px 0 0 4%;
@@ -236,4 +239,101 @@ h2{
 }
 .top10px{
     margin-top: 10px;
+}
+/* Footer */
+
+footer {
+    background-color: #19120A;
+    color: #A58827;
+    height: 477px;
+    font-size: 25px;
+    display: flex;
+}
+
+footer li {
+    list-style-type: none;
+    line-height: 50px;
+}
+
+footer ul {
+    display: block;
+    padding-top: 155px;
+    padding-right: 30%;
+}
+
+footer a {
+    text-decoration: none;
+    color: #A58827;
+}
+
+footer a:hover {
+    text-decoration: none;
+    color: #fff;
+}
+
+svg {
+    height: 90px;
+    padding: 40px 0px 0px 50px;
+}
+
+path.cls-1:hover {
+    fill: #fff;
+    zoom: 75%;
+}
+
+.center {
+    justify-content: center;
+    padding-right: 20%;
+    padding-top: 155px;
+    white-space: nowrap;
+}
+
+.start {
+    justify-content: start;
+    white-space: nowrap;
+}
+
+.end {
+    justify-content: end;
+}
+
+footer p {
+    padding-top: 155px;
+    max-width: 215px!important;
+    font-size: 25px;
+}
+
+
+/* Section Qui sommes-nous ? */
+
+.qsn {
+    background-color: #EBEBEB;
+    position: relative;
+}
+
+.titre {
+    position: absolute;
+    z-index: 2;
+    top: 5px;
+    color: #AFA47E;
+    font-size: 100px;
+    /* padding-left: 248px; */
+}
+
+.qsn img {
+    width: auto;
+    height: 1240px;
+    z-index: 1;
+}
+
+.texte {
+    position: absolute;
+    z-index: 3;
+    top: 150px;
+    color: #000;
+    font-size: 40px;
+    max-width: 900px;
+    left: 1050px;
+    text-align: left;
+    font-family: roboto;
 }
