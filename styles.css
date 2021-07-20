@@ -3,6 +3,9 @@ body {
     margin: 0px;
 }
 
+
+/* Footer */
+
 footer {
     background-color: #19120A;
     color: #A58827;
@@ -62,4 +65,37 @@ footer p {
     padding-top: 155px;
     max-width: 215px!important;
     font-size: 25px;
+}
+
+
+/* Section Qui sommes-nous ? */
+
+.qsn {
+    background-color: #EBEBEB;
+}
+
+.titre {
+    position: absolute;
+    z-index: 2;
+    top: 5px;
+    color: #AFA47E;
+    font-size: 100px;
+    padding-left: 248px;
+}
+
+img {
+    height: 1240px;
+    z-index: 1;
+}
+
+.texte {
+    position: absolute;
+    z-index: 3;
+    top: 150px;
+    color: #000;
+    font-size: 40px;
+    max-width: 900px;
+    left: 1050px;
+    text-align: left;
+    font-family: roboto;
 }
