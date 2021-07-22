@@ -13,7 +13,8 @@ img{
     width: 100%;
 }
 html{
-	font-family: Roboto, sans-serif;	
+	font-family: Roboto, sans-serif;
+    scroll-behavior: smooth;
 }
 body{
     position: relative;
@@ -212,7 +213,7 @@ form{
 label{
     height: 1.6vw;
     line-height: 1.6vw;
-    font-size: 1vw;
+    font-size: 1.3vw;
 }
 input{
     width: 100%;
@@ -269,27 +270,45 @@ button:focus{
 }
 /* ------------------FIN SECTION CONTACT--------------------- */
 
+#btt{
+    height: 8vw;
+    position: fixed;
+    bottom: 2vw;
+    right: 2vw;
+    background-color: transparent !important;
+    opacity: 60%;
+    z-index: 99;
+}
+#btt a{
+    transition: all 2s;
+}
+#btt:hover{
+    opacity: 100%;
+}
 /* Footer */
 
 footer {
     background-color: #19120A;
     color: #A58827;
-    height: 24.8vw;
     font-size: 1.3vw;
-    display: flex;
+    padding: 2vw;
 }
-
+#menufoot{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+}
 footer li {
     list-style-type: none;
     line-height: 2.6vw;
 }
 
-footer ul {
-    display: block;
-    padding-top: 8vw;
-    padding-right: 30%;
+footer p {
+    font-size: 1.3vw;
+    white-space: pre-line;
+    line-height: 2.6vw;
 }
-
 footer a {
     text-decoration: none;
     color: #A58827;
@@ -301,35 +320,15 @@ footer a:hover {
 }
 
 svg {
-    height: 4.7vw;
-    padding: 2vw 0 0 2.6vw;
+    height: 100%;
+    fill:#ce9e32;
 }
-
-path.cls-1:hover {
+#logo_foot{
+    width: 3vw;
+}
+#logo_foot:hover >svg{
     fill: #fff;
     zoom: 75%;
-}
-
-.center {
-    justify-content: center;
-    padding-right: 20%;
-    padding-top: 8vw;
-    white-space: nowrap;
-}
-
-.start {
-    justify-content: start;
-    white-space: nowrap;
-}
-
-.end {
-    justify-content: end;
-}
-
-footer p {
-    padding-top: 8vw;
-    max-width: 11.2vw!important;
-    font-size: 1.3vw;
 }
 /* ---------------------Propriétés COMMUNES------------------ */
 .overflow{
