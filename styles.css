@@ -45,9 +45,16 @@ header li{
     height: 2.6vw;
     line-height: 2.6vw;
 }
+header li a{
+    color: #D2A814;
+}
 header li:hover{
     transform: scale(1.1);
-    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition-duration: 0.5s;
+    transition-timing-function:cubic-bezier(0.1,0.5,0.8,1);
+    color: #DDE4ED;
+}
+header li:hover >a{
     color: #DDE4ED;
 }
 /* ------------------FIN HEADER------------------------- */
@@ -86,7 +93,7 @@ h1{
 
 /* -----------------SECTION SECTION QUI SOMMES NOUS ?--- */
 
-.qsn {
+#qsn {
     background: url("images/app.jpg") no-repeat;
     background-color: #EBEBEB;
     background-size: contain;
@@ -111,11 +118,27 @@ h1{
 /* -----------------SECTION SERVICES-------------------- */
 
 #services{
+    background-color: #E9DDB4;
     position: relative;
-    border: red solid 1px;
+}
+.mesureimg{
+    background: url("images/mesure.jpg") no-repeat;
+    background-size: contain;
+    background-position: right;
+}
+#categback{
+    position: absolute;
+    background-color: #fff;
+    width: 22vw;
+    height: 100%;
+    top: 0;
+    left: 3%;
+    z-index: 1;
 }
 #category{
+    position: relative;
     margin: 5.2vw 0 0 4%;
+    z-index: 3;
 }
 .categ_serv{
     font-size: 2vw;
@@ -127,7 +150,6 @@ h1{
 }
 .serv{
     color: #2D1E0A;
-    background-color: transparent !important;
 }
 .soucateg{
     margin: 0.7vw 0 0 2.6vw;
@@ -135,7 +157,6 @@ h1{
 }
 .serv:hover{
     color: #A58827;
-    background-color: transparent !important;
 }
 article{
     position: absolute;
@@ -144,7 +165,6 @@ article{
     right: 0;
     top: 49.4%;
     transform: translateY(-50%);
-    border: red solid 1px;
 }
 .dec_mob{
     width: 55%;
@@ -154,12 +174,20 @@ article{
 figcaption{
     position: absolute;
     font-size: 1.8vw;
-    border: red solid 1px;
-    left: 4.7%;
+    left: 10%;
     top: 90%;
     transform: translateY(-50%);
 }
-
+.mesu_capt{
+    position: absolute;
+    width: 31vw;
+    font-size: 1.8vw;
+    white-space: pre-line;
+    text-align: justify;
+    left: 10%;
+    top: 50%;
+    transform: translate(0%,-50%);
+}
 /* -----------------SECTION SERVICES-------------------- */
 
 
@@ -315,6 +343,7 @@ footer p {
     float: right;
 }
 h2{
+    position: relative;
     color: #AFA47E;
     font-size: 5.2vw;
     font-weight: bold;
@@ -331,4 +360,7 @@ h2{
 }
 .top05vw{
     margin-top: 0.5vw;
+}
+.hyde{
+    display: none;
 }
