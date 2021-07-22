@@ -148,6 +148,7 @@ h1{
 }
 .serv{
     color: #2D1E0A;
+    cursor: pointer;
 }
 .soucateg{
     margin: 0.7vw 0 0 2.6vw;
@@ -259,6 +260,7 @@ button{
     margin-top: 1vw;
     border-radius: 0.2vw;
     border: none;
+    cursor: pointer;
 }
 button:hover{
     background-color: #C5C5C4;
@@ -297,6 +299,7 @@ footer {
 #logo_foot{
     position: absolute;
     width: 3vw;
+    cursor: pointer;
 }
 #logo_foot:hover >svg{
     fill: #fff;
@@ -319,6 +322,7 @@ svg {
 }
 #reso_socio figure{
     height: 100%;
+    cursor: pointer;
 }
 #reso_socio figure img{
     width: initial;
@@ -396,4 +400,7 @@ h2{
 }
 .hyde{
     display: none;
+}
+li{
+    cursor: pointer;
 }
