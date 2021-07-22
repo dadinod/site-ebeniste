@@ -59,7 +59,6 @@ var int = document.getElementById("int");
 var ext = document.getElementById("ext");
 var mesu = document.getElementById("mesu");
 var serv = document.getElementsByClassName("serv");
-serv[0].style.color = "#D2A814";
 
 function decoration(){
 
@@ -71,11 +70,11 @@ function decoration(){
     ext.classList.add("hyde");
     mesu.classList.add("hyde");
 
-    serv[0].style.color = "#D2A814";
-    serv[1].style.color = "#2D1E0A";
-    serv[2].style.color = "#2D1E0A";
-    serv[2].style.color = "#2D1E0A";
-    serv[2].style.color = "#2D1E0A";
+    serv[0].classList.add("activeserv");
+    serv[1].classList.remove("activeserv");
+    serv[2].classList.remove("activeserv");
+    serv[3].classList.remove("activeserv");
+    serv[4].classList.remove("activeserv");
 
 }
 
@@ -88,11 +87,11 @@ function interieur(){
     ext.classList.add("hyde");
     mesu.classList.add("hyde");
 
-    serv[0].style.color = "#2D1E0A";
-    serv[1].style.color = "#D2A814";
-    serv[2].style.color = "#D2A814";
-    serv[3].style.color = "#2D1E0A";
-    serv[4].style.color = "#2D1E0A";
+    serv[0].classList.remove("activeserv");
+    serv[1].classList.add("activeserv");
+    serv[2].classList.add("activeserv");
+    serv[3].classList.remove("activeserv");
+    serv[4].classList.remove("activeserv");
 
 }
 
@@ -105,11 +104,11 @@ function exterieur(){
     int.classList.add("hyde");
     mesu.classList.add("hyde");
 
-    serv[0].style.color = "#2D1E0A";
-    serv[1].style.color = "#D2A814";
-    serv[2].style.color = "#2D1E0A";
-    serv[3].style.color = "#D2A814";
-    serv[4].style.color = "#2D1E0A";
+    serv[0].classList.remove("activeserv");
+    serv[1].classList.add("activeserv");
+    serv[2].classList.remove("activeserv");
+    serv[3].classList.add("activeserv");
+    serv[4].classList.remove("activeserv");
 
 }
 
@@ -122,10 +121,10 @@ function mesure(){
     int.classList.add("hyde");
     ext.classList.add("hyde");
 
-    serv[0].style.color = "#2D1E0A";
-    serv[1].style.color = "#2D1E0A";
-    serv[2].style.color = "#2D1E0A";
-    serv[3].style.color = "#2D1E0A";
-    serv[4].style.color = "#D2A814";
+    serv[0].classList.remove("activeserv");
+    serv[1].classList.remove("activeserv");
+    serv[2].classList.remove("activeserv");
+    serv[3].classList.remove("activeserv");
+    serv[4].classList.add("activeserv");
 
 }

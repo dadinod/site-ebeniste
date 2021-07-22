@@ -51,7 +51,7 @@ header li a{
 }
 header li:hover{
     transform: scale(1.1);
-    transition-duration: 0.5s;
+    transition-duration: 0.2s;
     transition-timing-function:cubic-bezier(0.1,0.5,0.8,1);
     color: #DDE4ED;
 }
@@ -146,9 +146,6 @@ h1{
     font-weight: bold;
     margin-top: 1.6vw;
 }
-.categ_serv:active{
-    color: #D2A814;
-}
 .serv{
     color: #2D1E0A;
 }
@@ -158,6 +155,9 @@ h1{
 }
 .serv:hover{
     color: #A58827;
+}
+.activeserv{
+    color: #D2A814;
 }
 article{
     position: absolute;
@@ -291,44 +291,78 @@ footer {
     background-color: #19120A;
     color: #A58827;
     font-size: 1.3vw;
-    padding: 2vw;
+    padding: 2vw 2vw 3vw 2vw;
+    position: relative;
 }
+#logo_foot{
+    position: absolute;
+    width: 3vw;
+}
+#logo_foot:hover >svg{
+    fill: #fff;
+    transform: scale(1.1);
+    transition-duration: 0.2s;
+    transition-timing-function:cubic-bezier(0.1,0.5,0.8,1);
+    
+}
+svg {
+    height: 100%;
+    fill:#ce9e32;
+}
+#reso_socio{
+    margin: 0 auto;
+    width: 20%;
+    height: 3.5vw;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.7vw 0;
+}
+#reso_socio figure{
+    height: 100%;
+}
+#reso_socio figure img{
+    width: initial;
+    height: 100%;
+}
+.res1{
+    display: none;
+}
+.res{
+    display: block;
+}
+#reso_socio figure:hover >.res1{
+    display: block;
+}
+#reso_socio figure:hover >.res2{
+    display: none;
+}
+
 #menufoot{
     display: flex;
     justify-content: space-between;
     width: 80%;
-    margin: 0 auto;
+    margin: 5vw auto 0 auto;
+}
+footer ul{
+    width: 15vw;
 }
 footer li {
-    list-style-type: none;
     line-height: 2.6vw;
 }
 
 footer p {
+    width: 15vw;
     font-size: 1.3vw;
     white-space: pre-line;
     line-height: 2.6vw;
 }
 footer a {
-    text-decoration: none;
     color: #A58827;
 }
 
 footer a:hover {
     text-decoration: none;
     color: #fff;
-}
-
-svg {
-    height: 100%;
-    fill:#ce9e32;
-}
-#logo_foot{
-    width: 3vw;
-}
-#logo_foot:hover >svg{
-    fill: #fff;
-    zoom: 75%;
 }
 /* ---------------------Propriétés COMMUNES------------------ */
 .overflow{
