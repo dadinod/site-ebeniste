@@ -242,7 +242,8 @@ textarea:focus{
     outline: none !important;
 }
 #check{
-    margin-top: 1vw;
+    width: 45%;
+    margin: 1vw auto 0 auto;
     text-align: center;
 }
 .chekbox{

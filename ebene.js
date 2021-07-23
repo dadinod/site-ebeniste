@@ -1,58 +1,80 @@
 // ------------------FORMULAIRE---------------------
 
 function Submit(){ 
+
  var name =document.getElementById("name");
  var email =document.getElementById("email");
  var objet =document.getElementById("objet");
  var message =document.getElementById("message");
  var robot =document.getElementById("robot");
+ var check =document.getElementById("check");
 
 
-    if (name.value == "")                                  
-    { 
+    if (name.value == "") { 
         // alert("Mettez votre nom."); 
         name.style.borderColor = "red";  
         return false; 
+    } else {
+        name.style.borderColor = "initial";  
+    }    
+    if (email.value == "") { 
+        // alert("Mettez une adresse email valide."); 
+        email.style.borderColor = "red"; 
+        return false; 
+    }  else {
+        email.style.borderColor = "initial";  
+    }     
+    if (email.value.indexOf("@", 0) < 0) { 
+        // alert("Mettez une adresse email valide."); 
+        email.style.borderColor = "red"; 
+        return false; 
+    }  else {
+        email.style.borderColor = "initial";  
+    }         
+    if (email.value.indexOf(".", 0) < 0) { 
+        // alert("Mettez une adresse email valide."); 
+        email.style.borderColor = "red"; 
+        return false; 
+    }  else {
+        email.style.borderColor = "initial";  
     }      
-    if (email.value == "")                                   
-    { 
-        // alert("Mettez une adresse email valide."); 
-        email.style.borderColor = "red"; 
-        return false; 
-    }    
-    if (email.value.indexOf("@", 0) < 0)                 
-    { 
-        // alert("Mettez une adresse email valide."); 
-        email.style.borderColor = "red"; 
-        return false; 
-    }    
-    if (email.value.indexOf(".", 0) < 0)                 
-    { 
-        // alert("Mettez une adresse email valide."); 
-        email.style.borderColor = "red"; 
-        return false; 
-    } 
-    if (objet.value == "")                        
-    { 
+    if (objet.value == "") { 
         // alert("Saisissez un objet"); 
         objet.style.borderColor = "red"; 
         return false; 
-    }
-    if (message.value == "")                        
-    { 
+    } else {
+        objet.style.borderColor = "initial";  
+    }  
+    if (message.value == "") { 
         // alert("Saisissez votre message"); 
         message.style.borderColor = "red"; 
         return false; 
-    } 
-    if (robot.value == "")                        
-    { 
+    }  else {
+        message.style.borderColor = "initial";  
+    }  
+    if (robot.checked == false) { 
         // alert("Confirmer que vous n'êtes pas robot"); 
-        robot.style.borderColor = "red"; 
+        check.style.color = "red"; 
         return false; 
-    }
+    } else {
+        check.style.color = "initial";  
+    }   
+}
+
+function Reset(){
+    
+let name =document.getElementById("name");
+    
+    name.style.borderColor = "initial"; 
+    email.style.borderColor = "initial";
+    objet.style.borderColor = "initial";  
+    message.style.borderColor = "initial";  
+    check.style.color = "initial";   
 }
 
 // ------------------FIN FORMULAIRE---------------------
+// ------------------SERVICES---------------------
+
 var services = document.getElementById("services");
 var deco = document.getElementById("deco");
 var int = document.getElementById("int");
@@ -128,3 +150,5 @@ function mesure(){
     serv[4].classList.add("activeserv");
 
 }
+
+// ------------------FIN SERVICES---------------------
