@@ -11,49 +11,42 @@ function Submit(){
 
 
     if (name.value == "") { 
-        // alert("Mettez votre nom."); 
         name.style.borderColor = "red";  
         return false; 
     } else {
         name.style.borderColor = "initial";  
     }    
     if (email.value == "") { 
-        // alert("Mettez une adresse email valide."); 
         email.style.borderColor = "red"; 
         return false; 
     }  else {
         email.style.borderColor = "initial";  
     }     
     if (email.value.indexOf("@", 0) < 0) { 
-        // alert("Mettez une adresse email valide."); 
         email.style.borderColor = "red"; 
         return false; 
     }  else {
         email.style.borderColor = "initial";  
     }         
     if (email.value.indexOf(".", 0) < 0) { 
-        // alert("Mettez une adresse email valide."); 
         email.style.borderColor = "red"; 
         return false; 
     }  else {
         email.style.borderColor = "initial";  
     }      
     if (objet.value == "") { 
-        // alert("Saisissez un objet"); 
         objet.style.borderColor = "red"; 
         return false; 
     } else {
         objet.style.borderColor = "initial";  
     }  
     if (message.value == "") { 
-        // alert("Saisissez votre message"); 
         message.style.borderColor = "red"; 
         return false; 
     }  else {
         message.style.borderColor = "initial";  
     }  
-    if (robot.checked == false) { 
-        // alert("Confirmer que vous n'êtes pas robot"); 
+    if (robot.checked == false) {  
         check.style.color = "red"; 
         return false; 
     } else {

@@ -19,6 +19,43 @@ html{
 body{
     position: relative;
 }
+
+/* ---------------------Propriétés COMMUNES------------------ */
+.overflow{
+    overflow: hidden;
+}
+.aligng{
+    float: left;
+}
+
+.alignd{
+    float: right;
+}
+h2{
+    position: relative;
+    color: #AFA47E;
+    font-size: 5.2vw;
+    font-weight: bold;
+    padding-top: 3.1vw;
+    margin-left: 4%;
+    z-index: 2;
+}
+.width45_100{
+    width: 45%;
+}
+.flex{
+    display: flex;
+    justify-content: space-evenly;
+}
+.top05vw{
+    margin-top: 0.5vw;
+}
+.hyde{
+    display: none;
+}
+li{
+    cursor: pointer;
+}
 /* ------------------HEADER----------------------- */
 header{
     width: 100%;
@@ -190,8 +227,6 @@ figcaption{
     top: 50%;
     transform: translate(0%,-50%);
 }
-/* -----------------SECTION SERVICES-------------------- */
-
 
 /* ---------------FIN SECTION SERVICES------------------ */
 
@@ -273,6 +308,8 @@ button:focus{
 }
 /* ------------------FIN SECTION CONTACT--------------------- */
 
+/* ------------------BACK TO TOP CONTACT--------------------- */
+
 #btt{
     height: 8vw;
     position: fixed;
@@ -288,7 +325,11 @@ button:focus{
 #btt:hover{
     opacity: 100%;
 }
-/* Footer */
+
+/* ---------------FIN BACK TO TOP CONTACT--------------------- */
+
+
+/* -----------------------FOOTER--------------------------- */
 
 footer {
     background-color: #19120A;
@@ -369,39 +410,4 @@ footer a:hover {
     text-decoration: none;
     color: #fff;
 }
-/* ---------------------Propriétés COMMUNES------------------ */
-.overflow{
-    overflow: hidden;
-}
-.aligng{
-    float: left;
-}
-
-.alignd{
-    float: right;
-}
-h2{
-    position: relative;
-    color: #AFA47E;
-    font-size: 5.2vw;
-    font-weight: bold;
-    padding-top: 3.1vw;
-    margin-left: 4%;
-    z-index: 2;
-}
-.width45_100{
-    width: 45%;
-}
-.flex{
-    display: flex;
-    justify-content: space-evenly;
-}
-.top05vw{
-    margin-top: 0.5vw;
-}
-.hyde{
-    display: none;
-}
-li{
-    cursor: pointer;
-}
+/* ------------------FIN FOOTER--------------------- */
